@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Header end */
+.header {
+  margin-top: 0;
+  margin-bottom: 74px;
+}
+.wrapper {
+  max-width: 870px;
+  width: 100%;
+  margin: auto;
+}
+.navbar {
+  padding: 40px 15px 0px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.nav_item {
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #bf7506;
+  margin-left: 24px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.nav_linkactive {
+  font-weight: 700;
+}
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+  color: #e9b362;
+}
+
+/* Header end */
+
+/* About_me start */
+.about_me {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_me_pic {
+  margin-right: 27px;
+}
+.about_me_text {
+  max-width: 510px;
+}
+.about_me_text_hello {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #211b12;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+.about_me_text_i_am {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  color: #bf7506;
+}
+.about_me_text_myname {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  color: #211b12;
+  margin-bottom: 24px;
+}
+.about_me_link {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0, 10px;
+}
+.about_me_item {
+  margin: 0 16px;
+}
+.about_me_item:first-child {
+  margin-left: 0px;
+}
+.about_me_item:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid #bf7506;
+  padding-bottom: 7px;
+  margin-left: 40px;
+}
+/* About_me end */
