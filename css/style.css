@@ -134,11 +134,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 .portfolio_card {
   max-width: 399px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 .partfolio_pic {
   margin-bottom: 16px;
@@ -188,3 +189,74 @@ body {
   line-height: 150%;
   border-bottom: 2px solid #bf7506;
 }
+
+/* Resume start */
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.resume_pic {
+  margin-right: 56px;
+}
+.resume_text_about {
+  max-width: 454px;
+}
+.resume_title {
+  font-size: 24px;
+  line-height: 135%;
+  margin-bottom: 4px;
+}
+.resume_name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #bf7506;
+  margin-bottom: 16px;
+}
+.resume_text {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.resume_skill {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #dd9c3c;
+  margin-bottom: 16px;
+}
+.resume_podpis {
+  margin-left: 0;
+  margin-top: 16px;
+}
+/* Resume end */
+
+/* Hard skill start */
+.hard_skill {
+  margin-bottom: 120px;
+}
+.hard_skill_title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 135%;
+  margin-bottom: 13px;
+}
+.hard_skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hard_skill_item {
+  margin-right: 6px;
+  padding: 5px 8px;
+  border: 1px solid #dd9c3c;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+/* Hard skill end */
