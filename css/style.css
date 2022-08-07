@@ -24,6 +24,7 @@ body {
   max-width: 870px;
   width: 100%;
   margin: auto;
+  padding-left: 10px;
 }
 .navbar {
   padding: 40px 15px 0px 15px;
@@ -260,3 +261,95 @@ body {
   margin-bottom: 10px;
 }
 /* Hard skill end */
+
+/* Send SMS start */
+.send_me {
+  margin-right: 10px;
+}
+.mail_form {
+  position: relative;
+  margin: 0 auto;
+  max-width: 436px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.mail_title {
+  align-items: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+.mail_fieldset {
+  border: 3px solid #e0dedc;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+.mail_legend {
+  font-size: 16px;
+  line-height: 150%;
+  color: #83807c;
+  margin-left: 32px;
+}
+.mail_name {
+  height: 25px;
+  width: 100%;
+  border: 0;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.mail_email {
+  height: 25px;
+  width: 100%;
+  border: 0;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.mail_sms {
+  height: 25px;
+  width: 100%;
+  border: 0;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 150%;
+  height: 131px;
+}
+.mail_button {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #bf7506;
+  padding: 7px 8px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+.mail_pic {
+  margin-right: 4px;
+}
+
+/* Send SMS end */
+
+/* footer start */
+.footer {
+  margin-top: 108px;
+}
+.footer_title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #83807c;
+}
+/* footer end */
