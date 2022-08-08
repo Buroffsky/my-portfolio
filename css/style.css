@@ -113,7 +113,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.about_me_item_link {
+.clip_subscribe {
   text-decoration: none;
   color: black;
 }
@@ -416,6 +416,18 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+  }
+  .about_me_item:last-child {
+    border-bottom: 2px solid #bf7506;
+    padding-bottom: 7px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .resume_name {
+    font-size: 24px;
   }
 }
 

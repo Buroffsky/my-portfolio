@@ -204,7 +204,7 @@
         <img src="images/hand_icon.png" alt="hand_icon" class="feedback_hand" />
         <div class="form_container">
           <h2 class="feedback_title">Готов обсудить проект...</h2>
-          <form action="#" class="form" method="post">
+          <form action="#" class="form">
             <div class="input_group">
               <label for="userName" class="input_label">Имя</label>
               <input
@@ -212,11 +212,18 @@
                 id="userName"
                 type="text"
                 class="input"
+                required
               />
             </div>
             <div class="input_group">
               <label for="userEmail" class="input_label">Email</label>
-              <input name="email" id="userEmail" type="email" class="input" />
+              <input
+                name="client_email"
+                id="userEmail"
+                type="email"
+                class="input"
+                required
+              />
             </div>
             <div class="input_group">
               <label for="userMesseg" class="input_label">Сообщение</label>
@@ -224,14 +231,13 @@
                 name="client_message"
                 id="userMesseg"
                 class="input area"
+                required
               ></textarea>
             </div>
             <div class="button_group">
               <button type="submit" class="submit_button">
-                <img src="./images/send-icon.svg" alt="send-icon" />
-                <a href="#!" class="about_me_item_link">
-                  <p class="clip_subscribe">Отправить</p>
-                </a>
+                <img src="images/send-icon.svg" alt="send-icon" />
+                <span class="clip_subscribe">Отправить</span>
               </button>
             </div>
           </form>
