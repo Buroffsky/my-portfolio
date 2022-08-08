@@ -262,86 +262,79 @@ body {
 }
 /* Hard skill end */
 
-/* Send SMS start */
-.send_me {
-  margin-right: 10px;
+/* Feedback start */
+.feedback_hand {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 25%;
 }
-.mail_form {
-  position: relative;
+.form_container {
+  max-width: 435px;
   margin: 0 auto;
-  max-width: 436px;
-  display: flex;
-  flex-flow: column wrap;
 }
-.mail_title {
-  align-items: center;
+.feedback_title {
   font-weight: 700;
   font-size: 32px;
   line-height: 125%;
+  letter-spacing: -0.03em;
+  color: #211b12;
   margin-bottom: 16px;
 }
-.mail_fieldset {
-  border: 3px solid #e0dedc;
-  border-radius: 4px;
-  margin-bottom: 24px;
-  padding: 0;
+.feedback {
+  padding-bottom: 160px;
+  position: relative;
 }
-.mail_legend {
+.input_group {
+  position: relative;
+  padding-top: 9px;
+  margin-bottom: 24px;
+}
+.input_label {
+  position: absolute;
+  left: 16px;
+  top: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #83807c;
-  margin-left: 32px;
+  padding: 0 8px;
+  background: #ffffff;
 }
-.mail_name {
-  height: 25px;
-  width: 100%;
-  border: 0;
-  padding-left: 32px;
-  font-size: 16px;
-  line-height: 150%;
+.input {
+  border: 3px solid #e0dedc;
+  border-radius: 4px;
+  width: 435px;
+  height: 56px;
 }
-.mail_email {
-  height: 25px;
-  width: 100%;
-  border: 0;
-  padding-left: 32px;
-  font-size: 16px;
-  line-height: 150%;
+.area {
+  min-height: 140px;
 }
-.mail_sms {
-  height: 25px;
-  width: 100%;
-  border: 0;
-  padding-left: 32px;
-  font-size: 16px;
-  line-height: 150%;
-  height: 131px;
-}
-.mail_button {
-  position: absolute;
+
+.submit_button {
+  padding: 7px 8px;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 2px solid #bf7506;
-  padding: 7px 8px;
   align-items: center;
   text-decoration: none;
-  color: black;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  right: 0;
-  bottom: 0;
-  transform: translateY(100%);
+  color: #211b12;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #bf7506;
+  cursor: pointer;
 }
-.mail_pic {
-  margin-right: 4px;
+.button_group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
 }
-
-/* Send SMS end */
+/* Feedback end */
 
 /* footer start */
 .footer {
-  margin-top: 108px;
 }
 .footer_title {
   font-weight: 400;

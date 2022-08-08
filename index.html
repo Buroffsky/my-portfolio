@@ -196,28 +196,33 @@
           </ul>
         </div>
       </section>
-      <section class="send_me">
-        <form action="" class="mail_form">
-          <p class="mail_title">Готов обсудить проект...</p>
-          <fieldset class="mail_fieldset">
-            <legend class="mail_legend">Имя</legend>
-            <input type="text" class="mail_name" />
-          </fieldset>
-          <fieldset class="mail_fieldset">
-            <legend class="mail_legend">Email</legend>
-            <input type="email" class="mail_email" />
-          </fieldset>
-
-          <fieldset class="mail_fieldset">
-            <legend class="mail_legend">Сообщение</legend>
-            <textarea name="" id="" class="mail_sms"></textarea>
-          </fieldset>
-
-          <a href="#!" class="mail_button">
-            <img src="images/send-icon.svg" alt="mail_pic" class="mail_pic" />
-            <p class="mail_send">Отправить</p>
-          </a>
-        </form>
+      <section class="feedback">
+        <img src="images/hand_icon.png" alt="hand_icon" class="feedback_hand" />
+        <div class="form_container">
+          <h2 class="feedback_title">Готов обсудить проект...</h2>
+          <form action="#" class="form">
+            <div class="input_group">
+              <label for="userName" class="input_label">Имя</label>
+              <input id="userName" type="text" class="input" />
+            </div>
+            <div class="input_group">
+              <label for="userEmail" class="input_label">Email</label>
+              <input id="userEmail" type="email" class="input" />
+            </div>
+            <div class="input_group">
+              <label for="userMesseg" class="input_label">Сообщение</label>
+              <textarea id="userMesseg" class="input area"></textarea>
+            </div>
+            <div class="button_group">
+              <button type="submit" class="submit_button">
+                <img src="./images/send-icon.svg" alt="send-icon" />
+                <a href="#!" class="about_me_item_link">
+                  <p class="clip_subscribe">Отправить</p>
+                </a>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
