@@ -22,19 +22,23 @@
           <nav class="navigation">
             <ul class="nav_list">
               <li class="nav_item">
-                <a href="#" class="nav_link active">Главная</a>
+                <a href="#main" class="nav_link active">Главная</a>
               </li>
-              <li class="nav_item"><a href="#" class="nav_link">Проекты</a></li>
-              <li class="nav_item"><a href="#" class="nav_link">Обо мне</a></li>
               <li class="nav_item">
-                <a href="#" class="nav_link">Связаться</a>
+                <a href="#portfolio" class="nav_link">Проекты</a>
+              </li>
+              <li class="nav_item">
+                <a href="#resume" class="nav_link">Обо мне</a>
+              </li>
+              <li class="nav_item">
+                <a href="#feedback" class="nav_link">Связаться</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <div class="wrapper">
         <div class="about_me">
           <div class="about_me_pic">
@@ -85,7 +89,7 @@
           </div>
         </div>
       </div>
-      <section class="portfolio wrapper">
+      <section class="portfolio wrapper" id="portfolio">
         <h2 class="portfolio_title">Последние проекты</h2>
         <div class="portfolio_cards">
           <div class="portfolio_card">
@@ -157,7 +161,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="resume">
         <div class="resume wrapper">
           <img src="images/avatar.jpg" class="resume_pic" alt="avatar" />
 
@@ -178,7 +182,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="skills">
         <div class="hard_skill wrapper">
           <h4 class="hard_skill_title">
             Работаю с разными языками и инструментами
@@ -196,22 +200,31 @@
           </ul>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <img src="images/hand_icon.png" alt="hand_icon" class="feedback_hand" />
         <div class="form_container">
           <h2 class="feedback_title">Готов обсудить проект...</h2>
           <form action="#" class="form">
             <div class="input_group">
               <label for="userName" class="input_label">Имя</label>
-              <input id="userName" type="text" class="input" />
+              <input
+                name="client_name"
+                id="userName"
+                type="text"
+                class="input"
+              />
             </div>
             <div class="input_group">
               <label for="userEmail" class="input_label">Email</label>
-              <input id="userEmail" type="email" class="input" />
+              <input name="email" id="userEmail" type="email" class="input" />
             </div>
             <div class="input_group">
               <label for="userMesseg" class="input_label">Сообщение</label>
-              <textarea id="userMesseg" class="input area"></textarea>
+              <textarea
+                name="client_message"
+                id="userMesseg"
+                class="input area"
+              ></textarea>
             </div>
             <div class="button_group">
               <button type="submit" class="submit_button">
@@ -228,5 +241,6 @@
     <footer class="footer">
       <p class="footer_title">Сделано с ❤️ в Мариуполе</p>
     </footer>
+    <script src="js/main.js.js"></script>
   </body>
 </html>
