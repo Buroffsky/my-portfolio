@@ -1,31 +1,3 @@
-// const ajaxSend = async (formData) => {
-//   const fetchResp = await fetch("telegram.php", {
-//     method: "POST",
-//     body: formData,
-//   });
-//   if (!fetchResp.ok) {
-//     throw new Error(
-//       `Ошибка по адресу ${url}, статус ошибка ${fetchResp.status}`
-//     );
-//   }
-//   return await fetchResp.text();
-// };
-
-// const forms = document.querySelectorAll("form");
-// forms.forEach((form) => {
-//   form.addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     const formData = new FormData(this);
-//     console.log(formData);
-
-//     ajaxSend(formData)
-//       .then((response) => {
-//         this.innerHTML = "Спасибо, <br> заявку получили";
-//         form.reset();
-//       })
-//       .catch((err) => console.error(err));
-//   });
-// });
 "use strict";
 const ajaxSend = async (formData) => {
   // создаем функцию отправки формы
@@ -57,9 +29,71 @@ forms.forEach((form) => {
       .then((response) => {
         // если все успешно, то..
         this.innerHTML =
-          "Спасибо,<br> заявку получили"; /* окно благодарности */
+          "Спасибо,<br> заявку получили<br>В ближайшее время мы с Вами свяжемся"; /* окно благодарности */
         form.reset(); /*  очищаем поля формы */
       })
       .catch((err) => console.error(err)); /* если ошибка, выводим в консоль */
   });
 });
+
+(function () {
+  const header = document.querySelector(".header");
+  window.onscroll = () => {
+    if (window.pageYOffset > 100) {
+      header.classList.add("navigation_active");
+    }
+    if (window.pageYOffset < 100) {
+      header.classList.remove("navigation_active");
+    }
+  };
+})();
+
+(function () {
+  const burgerItem = document.querySelector(".burger");
+  const menu = document.querySelector(".navigation");
+  const menuCloseItem = document.querySelector(".header_nav_close");
+  burgerItem.addEventListener("click", () => {
+    menu.classList.add("navigation_active");
+  });
+  menuCloseItem.addEventListener("click", () => {
+    menu.classList.remove("navigation_active");
+  });
+})();
+
+// Scroll to anchors
+(function () {
+  const smoothScroll = function (targetEl, duration) {
+    const headerElHeight = document.querySelector(".header").clientHeight;
+    let target = document.querySelector(targetEl);
+    let targetPosition = target.getBoundingClientRect().top - 50;
+    let startPosition = window.pageYOffset;
+    let startTime = null;
+
+    const ease = function (t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    };
+
+    const animation = function (currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, targetPosition, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+    requestAnimationFrame(animation);
+  };
+
+  const scrollTo = function () {
+    const links = document.querySelectorAll(".js-scroll");
+    links.forEach((each) => {
+      each.addEventListener("click", function () {
+        const currentTarget = this.getAttribute("href");
+        smoothScroll(currentTarget, 1000);
+      });
+    });
+  };
+  scrollTo();
+})();
